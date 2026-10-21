@@ -7,17 +7,41 @@
 a) Write a short article with appropriate headings in html that describes the key differences between writing in google docs and in an html document.
 b) Use an embedded stylesheet to set the default text font face to a serif font and all heading text to sans serif.
     -->
-<style>
-    body{
-        font-family: 'Times New Roman' , Times, serif;
-    }
-    h1,h2,h3,h4
-</style>
+    <style>
+        body {
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
-<h1></h1>
+
 <body>
     <section id="1">
-        <!-- put article here -->
+        <article>
+            <h1>Google Docs vs. HTML: Two Ways to Write</h1>
+            <p>Google Docs and HTML can hold the same words, but they ask very different things of the writer. One is built for drafting and sharing a document quickly. The other is built for publishing content that any browser, on any device, can display.</p>
+
+            <h2>What you see vs. what you code</h2>
+            <p>Google Docs is a WYSIWYG editor, short for "what you see is what you get." When you click Bold, the text turns bold right away, and the page on your screen looks like the page that will print. In an HTML document, you write plain text and wrap it in tags such as <code>&lt;p&gt;</code> and <code>&lt;h2&gt;</code>. You only see the finished result once a web browser reads the file and renders it.</p>
+
+            <h2>Formatting vs. structure</h2>
+            <p>Google Docs does have heading styles, but nothing stops you from making a line look like a heading by simply enlarging it and making it bold. HTML asks you to say what each piece of content is. A heading goes in a heading tag, a paragraph in a paragraph tag, and a list in a list tag. That structure helps screen readers, search engines, and anyone else working on the code understand how the content is organized.</p>
+
+            <h2>Where the styling lives</h2>
+            <p>In Google Docs, every font, colour, and size choice is attached directly to the text you selected. HTML is meant to hold content and structure, while CSS controls appearance. With a stylesheet, one rule can change the font on every heading in a document, or across an entire website, at once.</p>
+
+            <h2>Fixed pages vs. flexible screens</h2>
+            <p>A Google Doc is designed around a printed sheet, with set margins, a page size, and page breaks. An HTML page has no fixed edges. Text reflows to fit whatever window it appears in, whether that is a wide monitor or a narrow phone screen.</p>
+
+            <h2>Saving and sharing</h2>
+            <p>Google Docs saves automatically to the cloud, and you share it by sending a link. Several people can edit together in real time and leave comments. An HTML document is a file saved with a .html extension. You can open it in a browser on your own computer, but it needs to be uploaded to a web server before others can visit it online.</p>
+
+            <h2>Choosing the right tool</h2>
+            <p>Google Docs is the better fit for drafts, group work, and documents that will be printed or shared privately. HTML makes more sense when content needs to live on the web, adapt to different screens, and be structured clearly enough for any browser or assistive technology to read.</p>
+        </article>
     </section>
 </body>
 
