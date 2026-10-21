@@ -3,7 +3,7 @@
 
 <head>
     <title>Question 1</title>
-    <!-- 
+    <!--
 a) Edit the markup for section#1 to have a level 1 heading that says "Emphasis and strengthened text"
 
 b) Edit the markup for section#2 to also have a 2nd level heading that says "... Separating content from presentation"
@@ -15,13 +15,17 @@ d) Make a level 3 heading in section#2 of your markdown that says "Explanation"
 e) Write a paragraph explaining why the elements that you find in part c are a better choice than <i> and <b> tags.
         -->
 </head>
-<h1>Emphasis and strengthened text</h1>
-    <strong>Naruto is better then One piece<em>100%</em> </strong>
+
 <body>
     <section id="1">
+        <h1>Emphasis and strengthened text</h1>
+        <p>Some words in a sentence need more attention than others. If I tell you the quiz is on <em>Thursday</em>, I am stressing the day, not the quiz itself. If I say <strong>late submissions will not be accepted</strong>, that is information you cannot afford to miss. Emphasis changes how a sentence sounds, while strong text tells the reader that something is <em>serious</em>, <strong>urgent</strong>, or <strong>important</strong>.</p>
     </section>
     <section id="2">
+        <h2>... Separating content from presentation</h2>
+        <h3>Explanation</h3>
+        <p>The <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> tags are a better choice than <code>&lt;i&gt;</code> and <code>&lt;b&gt;</code> because they describe what the text means, not just how it should look. <code>&lt;em&gt;</code> signals stressed words, the way you would change your tone when speaking, and <code>&lt;strong&gt;</code> flags content that is important or urgent. <code>&lt;i&gt;</code> and <code>&lt;b&gt;</code> only tell the browser to show text in italics or bold, which is a decision about presentation. Keeping meaning in the HTML and leaving the look to CSS lets the page still make sense when it is read by a screen reader, scanned by a search engine, or restyled later. For example, if I decide important text should be red instead of bold, I can change one rule in my stylesheet and every <code>&lt;strong&gt;</code> element updates, while the markup still says exactly what that text is for.</p>
     </section>
 </body>
-<h2>Separating content from presentation</h2>
+
 </html>
